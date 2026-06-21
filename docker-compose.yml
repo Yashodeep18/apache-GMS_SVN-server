@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  svn-server:
+    build: .
+    container_name: svn-server
+    restart: unless-stopped
+    ports:
+      - "8443:8443"
+    volumes:
+      - ./var/svn:/var/svn
+      - ./var/www:/var/www

@@ -1,8 +1,32 @@
 apache-visualsvn-server
 =======================
 
-Use current project as example for setting-up a directory structure of Apache server configured as VisualSVN server on Ubuntu 12.04
+Use current project as example for setting-up a directory structure of Apache server configured as VisualSVN server on Ubuntu 12.04.
 
+## Docker Quickstart (Windows/Linux)
+
+You can run this project locally using Docker and the provided `docker-compose.yml` config.
+
+### Running on Windows (PowerShell)
+Simply run the setup script:
+```powershell
+.\setup.ps1
+```
+
+### Running on Linux / macOS (Shell)
+Build and run the container in the background:
+```bash
+docker-compose up --build -d
+```
+
+### Server Access
+- **Web UI & Repository list**: [https://localhost:8443/svn/](https://localhost:8443/svn/)
+- **Username**: `demo`
+- **Password**: `demo`
+
+---
+
+## Original Configuration
 Subversion repositories are available under HTTPS protocol at https://localhost:8443/svn/
 
 
